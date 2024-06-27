@@ -1,0 +1,274 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.popup-message {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #44c767;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container {
+  width: 90%;
+      }
+
+.main-header {
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end ;
+        margin: 10px;
+        /* padding: 30px 50px; */
+    }
+    
+    .logo {
+      width: 100px;
+      border-radius: 10%;
+      
+     /* display: inline-block; */
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    .navigation ul {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+    }
+    
+    .navigation li {
+        margin-right: 20px;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 45px;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.offerings {
+  /* padding: 20px 0; */
+  /* display: flex; */
+  text-align: left;
+  margin-left: 9rem ;
+  padding: 2rem 0;
+}
+
+.offer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offerings h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.offer {
+  /* display: inline-block; */
+  width: 45%;
+  /* margin: 2.5%; */
+  /* text-align: left; */
+  /* border: 2px solid red; */
+  margin-bottom: 3rem;
+}
+
+.offer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.offer p {
+  font-size: 16px;
+}
+
+.testimonials {
+  padding: 2rem 0;
+  /* border: 2px solid red; */
+  text-align: left;
+  margin-left: 8.8rem;
+  border-top: 1px solid black;
+}
+
+
+.testimonial-section {
+  display: flex;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  display: inline-block;
+  width: 30%;
+  margin: 1.66%;
+  text-align: left;
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonial h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 16px;
+}
+
+/* footer section */
+.main-footer {
+  /* background: #f8f8f8; */
+  padding: 20px 0;
+  border-top: 1px solid black;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end ;
+}
+
+.footer-logo {
+  width: 200px;
+  border-radius: 10%;
+  margin-left: 8.8rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links div {
+  flex: 1;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.footer-auth {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.footer-auth .button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer-auth .button:hover {
+  background: #0056b3;
+}
+
+.social-media {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8.8rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram{
+  background: palevioletred;
+  color: white
+}

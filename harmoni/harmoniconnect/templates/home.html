@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HarmoniConnect</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="popup-message" class="popup-message"></div>
+  <header class="main-header">
+    <img src="{% static 'images/logo.jpg' %}" alt="Logo" class="logo" />
+    <div class="container">
+      <nav class="navigation">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'client_dashboard' %}">My Dashboard</a></li>
+          {% else %}
+          <li><a href="{% url 'login' %}">Login</a></li>
+          {% endif %}
+          <li><a href="{% url 'support' %}">Support</a></li>
+          <li><a href="{% url 'search' %}">Search</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="{% static 'images/fireworks.jpeg' %}" alt="Fireworks">
+    <h1>Making Celebrations Easier!</h1>
+  </section>
+
+  <main class="container">
+    <section>
+      <div class="offerings">
+        <h2>What We Offer</h2>
+        <div class="offer-section">
+          <div class="offer">
+            <h3>Seamless Vendor Match-up</h3>
+            <p>Matching a dedicated service provider to a client for their event’s specific needs</p>
+          </div>
+          <div class="offer">
+            <h3>Effortless Client Connection</h3>
+            <p>Ease with which providers can connect with potential clients looking for their specific services</p>
+          </div>
+        </div>
+
+        <div class="offer-section">
+          <div class="offer">
+            <h3>Provider Spotlight</h3>
+            <p>Feature positive reviews of service providers by clients who have successfully used their services,
+              ranking you higher to other clients</p>
+          </div>
+          <div class="offer">
+            <h3>Provider Growth Suite</h3>
+            <p>Helping service providers expand their reach and book more events through our platform</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Hear from those that have experienced us</h2>
+      <div class="testimonial-section">
+        <div class="testimonial">
+          <img src="{% static 'images/avatar1.jpeg' %}" alt="Angel Anderson">
+          <h3>Angel Anderson</h3>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem.</p>
+        </div>
+        <div class="testimonial">
+          <img src="{% static 'images/avatar1.jpeg' %}" alt="John Doe">
+          <h3>John Doe</h3>
+          <p>Am et, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis.</p>
+        </div>
+        <div class="testimonial">
+          <img src="{% static 'images/avatar1.jpeg' %}" alt="Diana Smith">
+          <h3>Diana Smith</h3>
+          <p>Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+            ipsum quia dolor.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="upper-footer">
+          <img src="{% static '/images/logo.jpg' %}" alt="Logo" class="footer-logo">
+        <div class="footer-links">
+          <div>
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#featured-events">Featured events</a></li>
+              <li><a href="#promotions">Promotions</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="{% url 'about' %}">About us</a></li>
+              <li><a href="#contact">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-auth">
+            {% if not user.is_authenticated %}
+            <a href="{% url 'register' %}" class="button">Register</a>
+            {% endif %}
+            {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}" class="button">Log out</a>
+            {% else %}
+            <a href="{% url 'login' %}" class="button">Log in</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="social-media">
+        <p>&copy; Harmoni, Inc. 2024, Making Celebrations Easier</p>
+        <div class="social-links">
+          <p>Follow us:</p>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{% static 'js/home.js' %}"></script>
+</body>
+
+</html>

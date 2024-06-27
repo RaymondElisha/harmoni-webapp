@@ -1,0 +1,180 @@
+.main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end ;
+    margin: 10px;
+    /* padding: 30px 50px; */
+}
+
+.logo {
+  width: 100px;
+  border-radius: 10%;
+  margin-right: auto;
+ /* display: inline-block; */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.reviews-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+}
+.review {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.review img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.review .stars {
+    color: gold;
+    margin-right: 10px;
+}
+.review p {
+    margin: 0;
+}
+
+.main-footer {
+    /* background: #f8f8f8; */
+    padding: 20px 0;
+    border-top: 1px solid black;
+  }
+  
+  .upper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end ;
+  }
+  
+  .footer-logo {
+    width: 200px;
+    border-radius: 10%;
+    margin-left: 8.8rem;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-links div {
+    flex: 1;
+  }
+  
+  .footer-links h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  .footer-auth {
+    text-align: center;
+    padding-top: 1rem;
+  }
+  
+  .footer-auth .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .footer-auth .button:hover {
+    background: #0056b3;
+  }
+  
+  .social-media {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8.8rem;
+  }
+  
+  .social-links {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram{
+    background: palevioletred;
+    color: white
+  }

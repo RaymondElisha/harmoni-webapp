@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You for Choosing Us</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="{% static 'images/logo.jpg' %}" alt="Photo Logo" class="logo"/>
+      </div>
+      <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'client_dashboard' %}">My Dashboard</a>
+        <a href="{% url 'support' %}">Support</a>
+        <a href="{% url 'search' %}">Search</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Thank you for choosing us</h1>
+      <section class="welcome-section">
+        <div class="welcome-message">
+          <h2>Welcome,</h2>
+          <p>
+            At Harmone, we connect customers with top-rated service providers
+            for all your event needs to ensure quality and satisfaction in every
+            transaction. Whether you're looking to offer your event services or
+            in need of event services, you've come to the right place.
+          </p>
+        </div>
+        <div class="registration-options">
+          <div class="for-customers">
+            <h3>For Customers:</h3>
+            <p>
+              Start browsing our extensive list of event services. Register to
+              find professional help that meets your event needs quickly and
+              easily.
+            </p>
+            <a href="{% url 'customer_register' %}" class="register-button">Register As A Client</a>
+          </div>
+          <div class="for-providers">
+            <h3>For Service Providers:</h3>
+            <p>
+              Join our growing network. Expand your reach, connect with new
+              clients, and grow your business today!
+            </p>
+            <a href="{% url 'provider_register' %}" class="register-button">Register As A Service Provider</a>
+          </div>
+        </div>
+        <div class="login">
+          <p>Already Registered? <a href="{% url 'login' %}">Login here.</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <div class="upper-footer">
+            <img src="{% static '/images/logo.jpg' %}" alt="Logo" class="footer-logo">
+          <div class="footer-links">
+            <div>
+              <h4>Community</h4>
+              <ul>
+                <li><a href="#featured-events">Featured events</a></li>
+                <li><a href="#promotions">Promotions</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4>Company</h4>
+              <ul>
+                <li><a href="{% url 'about' %}">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="footer-auth">
+              <a href="{% url 'register' %}" class="button">Register</a>
+              {% if user.is_authenticated %}
+              <a href="{% url 'logout' %}" class="button">Log out</a>
+              {% else %}
+              <a href="{% url 'login' %}" class="button">Log in</a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <p>&copy; Harmoni, Inc. 2024, Making Celebrations Easier</p>
+          <div class="social-links">
+            <p>Follow us:</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+  </body>
+</html>
