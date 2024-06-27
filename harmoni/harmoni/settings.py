@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     '52a1-41-75-176-237.ngrok-free.app',
     'f736-41-202-230-115.ngrok-free.app',
-    'harmoni-webapp-101.vercel.app',
+    
 ]
 
 # Custom user model
